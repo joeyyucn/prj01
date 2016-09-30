@@ -193,8 +193,8 @@
 
 .navbar-toggle {
   position: relative;
-  float: right;
-  margin-right: @navbar-padding-horizontal;
+  float: left;
+  margin-left: @navbar-padding-horizontal;
   padding: 9px 10px;
   .navbar-vertical-align(34px);
   background-color: transparent;
@@ -271,9 +271,9 @@
     > li {
       float: left;
       > a {
-        //padding-top:    @navbar-padding-vertical;
-        //padding-bottom: @navbar-padding-vertical;
-		padding: 30px 30px 14px;
+        padding-top:    @navbar-padding-vertical;
+        padding-bottom: @navbar-padding-vertical;
+		//padding: 30px 30px 14px;
 		
       }
     }
@@ -422,7 +422,7 @@
       &:focus,
       &:hover .icon,
       &:focus .icon{
-        color: #FF0000;//@navbar-default-link-hover-color;
+        color: @navbar-default-link-hover-color;
         background-color: @navbar-default-link-hover-bg;
       }
     }

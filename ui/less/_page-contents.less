@@ -1,0 +1,28 @@
+.page-contents {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	
+	@media (max-width: @screen-xs-max) {
+		[class*="col-"] {
+			clear: both;
+			padding-bottom: 40px;
+		}
+	}
+}
+
+main {
+	.secitem {
+		clear: both;
+		margin-bottom: 40px;
+	}
+	
+	.content-primary {
+		font-size: @font-size-large;
+	}
+	
+	.content-tertiary {
+		font-size: @font-size-small;
+	}
+}
+
+
