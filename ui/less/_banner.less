@@ -1,0 +1,49 @@
+header[role="banner"] {
+	> .container {
+		position: relative;
+		z-index: 1999;
+	}
+	
+	.banner-brand {
+		@media(max-width: @grid-float-breakpoint-max){
+			display: none;
+		}
+	}
+	
+	.utility-nav {
+		zindex: 10000;
+		position: absolute;
+		top: 0;
+		right: 0;
+		> ul {
+			list-style: none;
+			> li {
+				float: left;
+				> a {
+					display: inline-block;
+					padding: 8px 12px;
+					&:hover {
+						text-decoration: none;
+					}
+					
+					@media(max-width: @grid-float-breakpoint-max) {
+						span {
+							.sr-only();
+						}
+						.icon {
+							font-size: 2em;
+							line-height: 1.2;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	
+	@media(min-width: @grid-float-breakpoint) {
+		.navbar-default {
+			.navbar-inverse();
+		}
+	}
+}

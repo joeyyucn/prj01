@@ -1,18 +1,28 @@
 .page-contents {
-
-	@media(max-width: @screen-xs-max) {
-		[class*="col-"]	{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	
+	@media (max-width: @screen-xs-max) {
+		[class*="col-"] {
 			clear: both;
-			//padding-bottom: 40px;
+			padding-bottom: 40px;
 		}
 	}
 }
 
-.social {
-	width: 100%;
-	text-align: center;
+main {
+	.secitem {
+		clear: both;
+		margin-bottom: 40px;
+	}
 	
-	> li {
-		display: inlineblock;
+	.content-primary {
+		font-size: @font-size-large;
+	}
+	
+	.content-tertiary {
+		font-size: @font-size-small;
 	}
 }
+
+

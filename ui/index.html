@@ -27,6 +27,15 @@
 
         <!-- Add your site or application content here -->
         <header role="banner">
+			<div class="container">
+				<a class="banner-brand" href="index.html"><img src="img/logo.jpg" width="180" alt="hikerOnline"></img></a>
+				<div class="utility-nav">
+					<ul>
+						<li><a href="#"><i class="icon fa fa-user fa-lg"></i><span>Log In or Register</span></a></li>
+						<li><a href="#"><i class="icon fa fa-shopping-cart fa-lg"></i><span>View Cart</span></a></li>
+					</ul>
+				</div>
+			</div>
         	<nav role="navigation" class="navbar navbar-static-top navbar-default">
             	<div class="container">
                 	<div class="navbar-header">
@@ -35,75 +44,160 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                    	<a class="navbar-brand" href="index.html">MY BLOG</a>
+                    	<a class="navbar-brand" href="index.html">
+							<img src="img/logo.jpg" width="120"></img>
+						</a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html"><span class="icon fa fa-group"></span>Home</a></li>
-                            <li><a href="#"><span class="icon fa fa-battery-0"></span>Link</a></li>
+                            <li class="active" ><a href="index.html"><span class="icon fa fa-group"></span>Home</a></li>
+                            <li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Actions<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Something else here</a></li>
+								</ul>
+							</li>
                             <li><a href="#">Link</a></li>
                         </ul>
+						
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Menu</a></li>
+						</ul>
                     </div>
                 </div>
             </nav>
         </header>
-        <div id="homepage-feature" class="carousel slide">
-        	<ol class="carousel-indicators">
-            	<li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
-                <li data-target="#homepage-feature" data-slide-to="1"></li>
-                <li data-target="#homepage-feature" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-            	<div class="item active">
-                	<img src="img/1.jpg">
-                </div>
-                <div class="item">
-                	<img src="img/2.jpg">
-                </div>
-                <div class="item">
-                	<img src="img/3.jpg">
-                </div>
-                <a class="left carousel-control" href="#homepage-feature" data-slide="prev">
-                	<span class="icon fa fa-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#homepage-feature" data-slide="next">
-                	<span class="icon fa fa-chevron-right"></span>
-                </a>
-            </div>
-        </div>
-        <div class="container page-contents">
-        	<div class="row">
-            	<div class="col-sm-4">
-                	<h2>Welcome</h2>
-                    <p>Suspendisse et arcu feilis ...</p>
-                    <p><a class="btn btn-primary pull-right" href="#">See our portfolio</a></p>
-                </div>
-                <div class="col-sm-4">
-                    <h2>Recent updates</h2>
-                    <p>Suspendisse et arcu felis ...</p>
-                    <p><a class="btn btn-primary pull-right" href="#">See what's new!</a></p>
-                </div>
-                <div class="col-sm-4">
-                    <h2>Our Team</h2>
-                    <p>Suspendisse et arcu felis ...</p>
-                    <p><a href="#" class="btn btn-primary pull-right">Meet the team!
-                    <span class="icon fa  fa-arrow-circle-right"></span></a></p>
-                </div>
-            </div>
-        </div>
-        
-        <footer role="contentinfo">
-        	<div class="container">
-            	<ul class="social">
-                	<li><a href="#"><span class="icon fa fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="icon fa fa-facebook"></span></a></li>
-                    <li><a href="#"><span class="icon fa fa-wechat"></span></a></li>
-                    <li><a href="#"><span class="icon fa fa-qq"></span></a></li>
-					<li><a href="#"><span class="icon fa fa-qrcode"></span></a></li>
-                </ul>
-	        	<p><small>Copyright &copy; Company Name</small></p>
-            </div>
-        </footer>
+		<main role="main">
+			<div class="container">
+			<div class="row">
+			<section class="content-primary col-md-5">
+				<div id="homepage-feature" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
+						<li data-target="#homepage-feature" data-slide-to="1"></li>
+						<li data-target="#homepage-feature" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/1.jpg">
+						</div>
+						<div class="item">
+							<img src="img/2.jpg">
+						</div>
+						<div class="item">
+							<img src="img/3.jpg">
+						</div>
+						<a class="left carousel-control" href="#homepage-feature" data-slide="prev">
+							<span class="icon fa fa-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#homepage-feature" data-slide="next">
+							<span class="icon fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+				<div>
+					<h3>Featured content</h3>
+					<p>Descript of featured content</p>
+					<a class="btn btn-feature pull-right" href="#">Learn more</a>
+				</div>
+			</section>
+		
+			<section class="content-secondary col-md-4">
+							<div class="secitem">
+							<h2>Welcome</h2>
+							<p>Suspendisse et arcu feilis ...</p>
+							<p><a class="btn btn-primary pull-right" href="#">Read more <span class="icon fa fa-arrow-circle-right"></span></a></p>
+							</div>
+							<div class="secitem">
+							<h2>Recent updates</h2>
+							<p>Suspendisse et arcu felis ...</p>
+							<p><a class="btn btn-primary pull-right" href="#">Read more <span class="icon fa fa-arrow-circle-right"></span></a></p>
+							</div>
+							<div class="secitem">
+							<h2>Our Team</h2>
+							<p>Suspendisse et arcu felis ...</p>
+							<p><a class="btn btn-primary pull-right" href="#">Read more <span class="icon fa fa-arrow-circle-right"></span></a></p>
+							</div>
+			</section>
+		
+			<section class="content-tertiary col-md-3">
+				<div class="secitem">
+							<h2>Our Team</h2>
+							<p>Suspendisse et arcu felis ...</p>
+							<p><a class="btn btn-default pull-right" href="#">Read more <span class="icon fa fa-arrow-circle-right"></span></a></p>
+							</div>
+			</section>
+			</div>
+			</div>
+		</main>
+		
+		<footer role="footer">
+			<div class="container">
+			<div class="row">
+			<!--categories-->
+			<div class="col-sm-4 col-md-2">
+				<h4>CATEGORIES</h4>
+				<ul>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Cloth</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Cloth</a></li>
+					<li><a href="#">Accessories</a></li>
+				</ul>
+			</div>
+			
+			<!--style-->
+			<div class="col-sm-4 col-md-2">
+				<h4>STYLE</h4>
+				<ul>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Cloth</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Cloth</a></li>
+					<li><a href="#">Accessories</a></li>
+				</ul>
+			</div>
+			
+			<!--other-->
+			<div class="col-sm-4 col-md-2">
+				<h4>OTHER</h4>
+				<ul>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Cloth</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Cloth</a></li>
+					<li><a href="#">Accessories</a></li>
+				</ul>
+			</div>
+			
+			
+			<!--about US-->
+			<div class="col-sm-12 col-md-6">
+				<div>
+				<h4>About Us</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas. Duis congue viverra arcu, ac aliquet turpis rutrum a. Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus hendrerit.</p>
+				<a class="btn btn-default btn-xs pull-right" href="#">Learn more <span class="fa fa-circle-arrow-right"></span></a>
+				</div>
+			</div>
+			
+			<div class="clearfix visible-sm visible-xs"></div>
+			<div class="social">
+			<ul>
+				<li><a href="#"><span class="icon fa fa-facebook fa-lg"</span></a></li>
+				<li><a href="#"><span class="icon fa fa-twitter fa-lg"</span></a></li>
+				<li><a href="#"><span class="icon fa fa-linkedin fa-lg"></span></a></li>
+				<li><a href="#"><span class="icon fa fa-google-plus fa-lg"></span></a></li>
+			</ul>
+			</div>
+			</div>
+			</div>
+		</footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
